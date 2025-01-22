@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: customFont;
+    src: url(../public/font/iranyekanwebregular.e31c09af.woff2);
+}

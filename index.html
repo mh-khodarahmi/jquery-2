@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main/main.css">
+
+
+</head>
+
+<body dir="rtl">
+
+  <!-- Start NavBar -->
+  <div class="navbar font-harchi">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-zinc-950">
+          <li><a>خانه</a></li>
+          <li class="">
+            <a>محصولات</a>
+            <ul class="p-2">
+              <li><a>کالای دیجیتال</a></li>
+              <li><a>محصولات برقی</a></li>
+            </ul>
+          </li>
+          <li><a>ارتباط با ما</a></li>
+          <li><a>درباره ما</a></li>
+
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <details class="dropdown">
+        <summary class="btn m-1">انتخاب تم</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+          <li id="aqua"><a>aqua</a></li>
+          <li id="dark"><a>dark</a></li>
+          <li id="luxury"><a>luxury</a></li>
+        </ul>
+      </details>
+    </div>
+    <div class="navbar-center hidden lg:flex ">
+      <ul class="menu menu-horizontal px-1">
+        <li class="text-[16px]"><a>خانه</a></li>
+
+        <li>
+          <details>
+            <summary class="text-[16px]">محصولات</summary>
+            <ul class="p-2 bg-zinc-950 z-50">
+              <li class="text-[16px]"><a>کالای دیجیتال</a></li>
+              <li class="text-[16px]"><a>محصولات برقی</a></li>
+            </ul>
+          </details>
+        </li>
+
+
+        <li class="text-[16px]"><a>ارتباط با ما</a></li>
+        <li class="text-[16px]"><a>درباره ما</a></li>
+
+      </ul>
+    </div>
+
+    <div class="navbar-end ">
+      <div class="form-control me-5">
+        <input type="text" placeholder="جستجو" class="input input-bordered w-24 md:w-auto" />
+      </div>
+      <a class="btn" id="going">ورود/ ثبت نام</a>
+    </div>
+  </div>
+  <!-- End NavBar -->
+
+
+
+  <!-- Start Carousel -->
+  <div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img
+        src="https://dkstatics-public.digikala.com/digikala-adservice-banners/2b4b63beb8044fcabfbe2413cfe60b483184dcdc_1736346428.gif?x-oss-process=image?x-oss-process=image/format,webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide4" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full">
+      <img
+        src="https://dkstatics-public.digikala.com/digikala-adservice-banners/1708625cc4a4f16bfe711f4e2dba88482a3d158f_1736256190.jpg?x-oss-process=image/quality,q_95/format,webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <img
+        src="https://dkstatics-public.digikala.com/digikala-adservice-banners/c34501641393790ad239f85075c48ce40d521608_1736603471.jpg?x-oss-process=image/quality,q_95/format,webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide4" class="carousel-item relative w-full">
+      <img
+        src="https://dkstatics-public.digikala.com/digikala-adservice-banners/82d71cfe1b08a55180bee3fc06658d8765b9ba74_1736768561.gif?x-oss-process=image?x-oss-process=image/format,webp"
+        class="w-full" />
+      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Carousel -->
+
+
+  <!-- Start Card -->
+  <!-- <button class="btn bg-neutral-950 text-white" id="basket">خرید</button> -->
+  <div class="card-container flex flex-wrap justify-evenly ">
+
+
+  </div>
+  <!-- End Card -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
